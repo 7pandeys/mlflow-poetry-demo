@@ -32,3 +32,5 @@ jobs:
     - name: Run training
       run: |
         poetry run python model/train.py
+
+
