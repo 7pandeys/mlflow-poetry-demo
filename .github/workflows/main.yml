@@ -3,7 +3,7 @@ name: Train and Track Model
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-run:
