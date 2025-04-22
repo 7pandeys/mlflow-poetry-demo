@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error
 
 # ✅ Set tracking URI for MLflow UI (local directory)
 # mlflow.set_tracking_uri("file:///app/mlruns")  # or change to http://<tracking-server>:5000 for remote
-
+mlflow.set_tracking_uri("file:./mlruns")  # or change to http://<tracking-server>:5000 for remote
 # Generate synthetic regression data
 X, y = make_regression(n_samples=100, n_features=1, noise=0.1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
